@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Inter:wght@600;700;800;900&family=Lora:wght@500&family=Montserrat:wght@300&display=swap');
+
+$black:rgb(29, 29, 29);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100vw;
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        
+        div{
+            margin: 30px;
+
+            .hide{
+                visibility: hidden;
+            }
+
+
+
+            button{
+                cursor: pointer;
+                padding: 5px;
+                border-color: white;
+                box-shadow: none;
+                border-style:ridge;
+                font-family: 'Crimson Pro', serif;
+            }
+            ul{
+                display: flex;
+                li{
+                    margin: 0 30px 0 30px;
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    .active{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+main{
+    width: 100vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    section{
+        aside{
+            padding: 20px;
+            .banner{
+                max-width: 800px;
+            }
+        }
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1{
+            font-family: 'Lora', serif;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+        p{
+            margin-bottom: 10px;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+    
+    .img{
+        aside{
+            position: relative;
+
+            
+            article{
+                position: absolute;
+                bottom: -50px;
+                right: 30px;
+                width: 450px;
+                .aliza{
+                    display: flex;
+                    align-items: center;
+                    .foto{
+                        width: 45px;
+                        border-radius: 100%;
+                        margin: 5px;
+                    }
+                    div{
+                        margin-left: 10px;
+                        h3{
+                            font-size: 16px;
+                            margin-bottom: 5px;
+                        }
+                        p{
+                            font-size: 14px;
+                            margin-top: 5px;
+                            color: rgb(201, 201, 201);
+                        }
+                    }
+                }
+                div{
+                    padding: 10px;
+                    h2{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+footer{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+
+    p, h2{
+        font-size: 16px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .banner{
+        width: 600px;
+    }
+}
+
+@media (max-width: 705px) {
+    nav{
+        top: 0;
+        flex-direction: column;
+        .button{
+            width: 80vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .hide{
+                border-style: none;
+                visibility: visible;
+            }
+        }
+        div{
+            
+            ul{
+                margin-top: 100px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                li{
+                    padding: 20px;
+                }
+            }
+        }
+    }
+    .banner{
+        width: 400px;
+    }
+    article{
+        width: 300px !important;
+    }
+    .hidden{
+        visibility: hidden;
+        display: none;
+    }
+}

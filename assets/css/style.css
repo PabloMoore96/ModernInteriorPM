@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Inter:wght@600;700;800;900&family=Lora:wght@500&family=Montserrat:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100vw;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav div {
+  margin: 30px;
+}
+header nav div .hide {
+  visibility: hidden;
+}
+header nav div button {
+  cursor: pointer;
+  padding: 5px;
+  border-color: white;
+  box-shadow: none;
+  border-style: ridge;
+  font-family: "Crimson Pro", serif;
+}
+header nav div ul {
+  display: flex;
+}
+header nav div ul li {
+  margin: 0 30px 0 30px;
+  list-style: none;
+}
+header nav div ul li a {
+  text-decoration: none;
+}
+header nav div ul li a:hover {
+  text-decoration: underline;
+}
+header nav div ul li .active {
+  text-decoration: underline;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main section aside {
+  padding: 20px;
+}
+main section aside .banner {
+  max-width: 800px;
+}
+main .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .text h1 {
+  font-family: "Lora", serif;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+main .text p {
+  margin-bottom: 10px;
+}
+main .text a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+}
+main .img aside {
+  position: relative;
+}
+main .img aside article {
+  position: absolute;
+  bottom: -50px;
+  right: 30px;
+  width: 450px;
+}
+main .img aside article .aliza {
+  display: flex;
+  align-items: center;
+}
+main .img aside article .aliza .foto {
+  width: 45px;
+  border-radius: 100%;
+  margin: 5px;
+}
+main .img aside article .aliza div {
+  margin-left: 10px;
+}
+main .img aside article .aliza div h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+main .img aside article .aliza div p {
+  font-size: 14px;
+  margin-top: 5px;
+  color: rgb(201, 201, 201);
+}
+main .img aside article div {
+  padding: 10px;
+}
+main .img aside article div h2 {
+  margin-left: 10px;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+footer p, footer h2 {
+  font-size: 16px;
+  margin: 5px;
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    width: 600px;
+  }
+}
+@media (max-width: 705px) {
+  nav {
+    top: 0;
+    flex-direction: column;
+  }
+  nav .button {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .button .hide {
+    border-style: none;
+    visibility: visible;
+  }
+  nav div ul {
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  nav div ul li {
+    padding: 20px;
+  }
+  .banner {
+    width: 400px;
+  }
+  article {
+    width: 300px !important;
+  }
+  .hidden {
+    visibility: hidden;
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
